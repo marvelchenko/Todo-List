@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif; /* Sets the overall font for the app */
+  background-color: #f9f9f9; /* Light background for a clean look */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders are included in element widths/heights */
+}
+
+/* App Container */
+.App {
+  text-align: center; /* Centers the text within the app container */
+  padding: 20px; /* Adds space around the content */
+}
+
+/* Todo Wrapper */
+.todo-wrapper {
+  max-width: 500px; /* Sets the max width of the Todo app container */
+  margin: 0 auto; /* Centers the container horizontally */
+  background: white; /* White background for the Todo list */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a card-like effect */
+  border-radius: 8px; /* Slightly rounded corners */
+  padding: 20px; /* Inner spacing for the content */
+}
+
+/* Todo Header */
+.todo-wrapper h1 {
+  font-size: 24px; /* Makes the heading large */
+  color: #333; /* Dark gray for the text */
+  margin-bottom: 20px; /* Adds space below the header */
+}
+
+/* Input Form */
+form {
+  display: flex; /* Makes input and button sit on one line */
+  justify-content: space-between; /* Adds space between input and button */
+  margin-bottom: 20px; /* Adds space below the form */
+}
+
+form input {
+  flex: 1; /* Allows the input to stretch to fill available space */
+  padding: 10px; /* Adds inner spacing for better usability */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners for the input */
+  font-size: 16px; /* Readable font size */
+}
+
+form button {
+  padding: 10px 20px; /* Inner spacing for the button */
+  background-color: #007bff; /* Blue button color */
+  color: white; /* White text color */
+  border: none; /* Removes border */
+  border-radius: 4px; /* Rounded corners for the button */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  font-size: 16px; /* Readable font size */
+}
+
+form button:hover {
+  background-color: #0056b3; /* Darker blue for hover effect */
+}
+
+/* Todo Items */
+.todo {
+  display: flex; /* Allows text and buttons to sit on one line */
+  justify-content: space-between; /* Adds space between text and buttons */
+  align-items: center; /* Centers items vertically */
+  padding: 10px; /* Inner spacing for better readability */
+  border-bottom: 1px solid #eee; /* Light divider between todos */
+}
+
+.todo:last-child {
+  border-bottom: none; /* Removes border for the last todo item */
+}
+
+.todo p {
+  flex: 1; /* Allows the text to stretch */
+  margin: 0; /* Removes default margins */
+  font-size: 18px; /* Readable font size */
+  color: #555; /* Medium gray for the text */
+}
+
+/* Action Buttons */
+.todo button {
+  background: none; /* No background color */
+  border: none; /* No border */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  color: #007bff; /* Blue color for icons */
+  font-size: 18px; /* Scalable icon size */
+}
+
+.todo button:hover {
+  color: #0056b3; /* Darker blue for hover effect */
+}
